@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: var(--figma-color-bg);
+    color: var(--figma-color-text);
+  }
+
+  hr {
+    height: 1px;
+    background-color: var(--figma-color-border);
+    border: 0;
+  }
+}
+
+@layer components {
+  .link {
+    @apply [&.active]:text-figma-text-selected font-semibold;
+  }
+}
